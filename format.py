@@ -2,7 +2,25 @@ from openpyxl import Workbook
 from openpyxl import load_workbook
 import datetime
 from openpyxl.styles import PatternFill
+import os
 
+def delete_files():
+    file = 'appointmentsReport.csv'
+    location = "C:/Users/Centre Director/Downloads/"
+    path = os.path.join(location, file)
+    os.remove(path)
+
+
+def copy_template():
+    wb = Workbook()
+    wb.save('Appointments.xlsx')
+
+    f ="C:/Users/Centre Director/Desktop/python_script_files/Template.xlsx"
+    wb_temp = load_workbook(f)
+
+    wb = load_workbook('Appointments.xlsx')
+
+    wb_temp.save("Appointments.xlsx")
 
 def delete_bad_columns():
     wb = load_workbook(filename = 'appointmentsReport.xlsx')
@@ -61,7 +79,8 @@ def format_date_time():
 
 
 def remove_students():
-    wb = load_workbook(filename = 'highschool.xlsx')
+    f = "C:/Users/Centre Director/Desktop/python_script_files/highschool.xlsx"
+    wb = load_workbook(f)
     ws = wb['Sheet1']
 
     maxr = ws.max_row
@@ -320,7 +339,7 @@ def get_cell(lst,day_num):
 
 def fill_cell_ol(y):
 
-    wb = load_workbook(filename = 'Template.xlsx')
+    wb = load_workbook(filename = 'Appointments.xlsx')
     ws = wb['Week']
 
     fill = PatternFill(start_color='EA9999', fill_type='solid')
@@ -339,11 +358,11 @@ def fill_cell_ol(y):
                 ws[col + str(row+3)].fill = fill
                 row = row + 4
 
-    wb.save('Template.xlsx')
+    wb.save('Appointments.xlsx')
 
 
 def fill_cell(y):
-    wb = load_workbook(filename = 'Template.xlsx')
+    wb = load_workbook(filename = 'Appointments.xlsx')
     ws = wb['Week']
 
     first = PatternFill(start_color='FCE5CD', fill_type='solid')
@@ -368,11 +387,14 @@ def fill_cell(y):
     other_times.append(datetime.time(hour = 15, minute = 45))
     other_times.append(datetime.time(hour = 16))
 
-
+    d = 0
 
     for day in y:
         i=0
         h= 0
+        thing = list(day[0].keys())[0].date()
+        the_col = 117-28*d
+        ws['A' + str(the_col)].value = thing
 
         for dict in day:
             col = list(dict.values())[0][1]
@@ -396,16 +418,26 @@ def fill_cell(y):
                 row = row + 4
             i+=1
             h = list(dict.keys())[0].time()
-    wb.save('Template.xlsx')
+        d += 1
+    wb.save('Appointments.xlsx')
+
+def delete_files_last():
+    file = 'appointmentsReport.xlsx'
+    location = "C:/Users/Centre Director/Desktop/"
+    path = os.path.join(location, file)
+    os.remove(path)
 
 
 
+delete_files()
+copy_template()
 delete_bad_columns()
 fix_intake()
 format_date_time()
 remove_students()
 no_student_name()
 home_online()
+
 
 list_ol_ic = create_list()
 
@@ -428,3 +460,7 @@ for thing in list_ic_days:
 
 fill_cell_ol(finsihed_list_ol)
 fill_cell(finished_list_ic)
+
+
+
+delete_files_last()
