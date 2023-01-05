@@ -1,0 +1,567 @@
+Appointment_Date,Appointment_Time,Booking_Date,Booking_Time,Customer_Name,Customer_Email,Customer_Address,Customer_Contact,Customer_Timezone,Service,Booked_By,Service_Duration_mins,Amount,Staff_Name,Staff_Email,Resource,Customer_Remark,Intake_Form,Appointment_Status,Arrival_Status,Admin_Note,Payment_Info,AddOn
+14-Jan-23,10:00 AM,03-Jan-23,4:15 PM,PARENT,EMAIL,CITY,,,In-Centre Session - 1 Hour(1) ,Admin,60,0,D In-Centre seat 4,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,10:00 AM,26-Nov-22,10:25 PM,PARENT,EMAIL,CITY," Mobile:4165607211
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,M In-Centre Seat 13,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,10:00 AM,30-Nov-22,7:48 AM,PARENT,EMAIL,CITY," Mobile:4167970863
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,A In-Centre seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,10:15 AM,05-Dec-22,7:15 PM,PARENT,EMAIL,CITY," Mobile:4166666302
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,E In-Centre seat 5,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,10:30 AM,08-Dec-22,7:24 AM,PARENT,EMAIL,CITY," Mobile:6472968884
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,C In-Centre seat 3,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,10:30 AM,24-Nov-22,10:20 AM,PARENT,EMAIL,CITY," Mobile:6476880754
+",US/Eastern (GMT  -05:00),@Home Online Session - 1 Hour(1) ,Self,60,0,2 @home seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,11:00 AM,15-Nov-22,5:09 PM,PARENT,EMAIL,CITY," Mobile:6477798866
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,M In-Centre Seat 13,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,11:00 AM,03-Jan-23,6:08 PM,PARENT,EMAIL,CITY," Mobile:519 819-4868
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,A In-Centre seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,11:15 AM,12-Dec-22,9:54 AM,PARENT,EMAIL,CITY," Mobile:4163019230
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,N In-Centre seat 14,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,11:15 AM,04-Jan-23,12:28 PM,PARENT,EMAIL,CITY," Mobile:2897166553
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,B In-Centre seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,11:30 AM,15-Dec-22,8:29 PM,PARENT,EMAIL,CITY," Mobile:6045376079
+",US/Eastern (GMT  -05:00),@Home Online Session - 1 Hour(1) ,Self,60,0,2 @home seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,11:30 AM,06-Dec-22,3:19 PM,PARENT,EMAIL,CITY," Mobile:4167228877
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,C In-Centre seat 3,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,12:00 PM,17-Dec-22,11:39 PM,PARENT,EMAIL,CITY," Mobile:6476192337
+",US/Eastern (GMT  -05:00),@Home Online Session - 1 Hour(1) ,Self,60,0,1 @home seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,12:00 PM,21-Nov-22,9:59 AM,PARENT,EMAIL,CITY," Mobile:4168815224
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,M In-Centre Seat 13,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,12:00 PM,05-Dec-22,8:37 PM,PARENT,EMAIL,CITY," Mobile:09057169749
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,A In-Centre seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,12:00 PM,18-Dec-22,7:50 PM,PARENT,EMAIL,CITY," Mobile:(416) 702-5701
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,D In-Centre seat 4,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,12:00 PM,18-Dec-22,7:50 PM,PARENT,EMAIL,CITY," Mobile:(416) 702-5701
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,G In-centre seat 7,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,12:15 PM,03-Jan-23,1:09 PM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,E In-Centre seat 5,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,12:15 PM,02-Jan-23,4:53 PM,PARENT,EMAIL,CITY," Mobile:4165052711
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,N In-Centre seat 14,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,12:15 PM,02-Jan-23,4:53 PM,PARENT,EMAIL,CITY," Mobile:4165052711
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,B In-Centre seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,12:15 PM,04-Jan-23,10:06 AM,PARENT,EMAIL,CITY," Mobile:4167238786
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,H In-centre seat 8,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,12:30 PM,07-Dec-22,7:29 PM,PARENT,EMAIL,CITY," Mobile:6475756445
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,C In-Centre seat 3,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,1:00 PM,12-Dec-22,1:47 PM,PARENT,EMAIL,CITY,,,In-Centre Session - 1 Hour(1) ,Admin,60,0,F In-Centre seat 6,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,1:00 PM,26-Nov-22,11:14 AM,PARENT,EMAIL,CITY," Mobile:(416) 471-6708
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,G In-centre seat 7,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,1:00 PM,23-Nov-22,4:12 PM,PARENT,EMAIL,CITY," Mobile:6479870088
+",US/Eastern (GMT  -05:00),@Home Online Session - 1 Hour(1) ,Self,60,0,1 @home seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,1:00 PM,23-Nov-22,8:58 PM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,M In-Centre Seat 13,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,1:00 PM,23-Nov-22,8:58 PM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,D In-Centre seat 4,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,1:00 PM,19-Nov-22,2:25 PM,PARENT,EMAIL,CITY," Mobile:6472688889
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,A In-Centre seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+14-Jan-23,1:00 PM,27-Dec-22,3:13 PM,PARENT,EMAIL,CITY," Mobile:6472019648
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,I In-centre seat 9,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,3:30 PM,01-Dec-22,7:24 PM,PARENT,EMAIL,CITY," Mobile:6472849150
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,A In-Centre seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,3:30 PM,05-Dec-22,10:12 PM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,D In-Centre seat 4,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,3:30 PM,19-Dec-22,11:25 AM,PARENT,EMAIL,CITY," Mobile:4165223245
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,G In-centre seat 7,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,3:30 PM,15-Nov-22,5:06 PM,PARENT,EMAIL,CITY," Mobile:647) 978-5118
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,M In-Centre Seat 13,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,3:45 PM,01-Dec-22,3:11 PM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,E In-Centre seat 5,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,3:45 PM,01-Dec-22,3:11 PM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,H In-centre seat 8,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,3:45 PM,28-Nov-22,10:52 AM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,N In-Centre seat 14,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,3:45 PM,28-Nov-22,10:52 AM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,B In-Centre seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,3:45 PM,15-Dec-22,3:02 PM,PARENT,EMAIL,CITY," Mobile:4168247783
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,K In-centre seat 11,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,4:00 PM,16-Nov-22,4:26 PM,PARENT,EMAIL,CITY," Mobile:4162582204
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,F In-Centre seat 6,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,4:00 PM,30-Nov-22,2:08 PM,PARENT,EMAIL,CITY," Mobile:4379726978
+",US/Eastern (GMT  -05:00),@Home Online Session - 1 Hour(1) ,Self,60,0,2 @home seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,4:00 PM,04-Jan-23,12:04 PM,PARENT,EMAIL,CITY," Mobile:4168358105
+",US/Eastern (GMT  -05:00),@Home Online Session - 1 Hour(1) ,Admin,60,0,I In-centre seat 9,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,4:00 PM,13-Nov-22,9:06 PM,PARENT,EMAIL,CITY," Mobile:416-578-0402
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,C In-Centre seat 3,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,4:30 PM,16-Nov-22,4:37 PM,PARENT,EMAIL,CITY," Mobile:5077228598
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,D In-Centre seat 4,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,4:30 PM,16-Nov-22,4:38 PM,PARENT,EMAIL,CITY," Mobile:5077228598
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,G In-centre seat 7,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,4:30 PM,16-Nov-22,4:39 PM,PARENT,EMAIL,CITY," Mobile:5077228598
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,J In-centre seat 10,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,4:30 PM,02-Jan-23,12:39 PM,PARENT,EMAIL,CITY," Mobile:6472023181
+",US/Eastern (GMT  -05:00),@Home Online Session - 1 Hour(1) ,Self,60,0,1 @home seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,4:30 PM,15-Nov-22,5:07 PM,PARENT,EMAIL,CITY," Mobile:(416) 702-5701
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,M In-Centre Seat 13,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,4:30 PM,15-Nov-22,5:07 PM,PARENT,EMAIL,CITY," Mobile:(416) 702-5701
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,A In-Centre seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,4:45 PM,04-Jan-23,8:34 PM,PARENT,EMAIL,CITY," Mobile:6475044058
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,E In-Centre seat 5,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,4:45 PM,15-Nov-22,5:22 PM,PARENT,EMAIL,CITY," Mobile:(647) 885-6637
+",,In-Centre Session - 1 Hour(1) ,Admin,60,0,N In-Centre seat 14,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,4:45 PM,15-Nov-22,5:23 PM,PARENT,EMAIL,CITY," Mobile:(647) 885-6637
+",,In-Centre Session - 1 Hour(1) ,Admin,60,0,B In-Centre seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,5:00 PM,03-Sep-22,12:03 AM,PARENT,EMAIL,CITY," Mobile:2892510440
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,L In-centre seat 12,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,5:00 PM,12-Dec-22,9:52 AM,PARENT,EMAIL,CITY," Mobile:4163019230
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,I In-centre seat 9,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,5:00 PM,23-Nov-22,4:10 PM,PARENT,EMAIL,CITY," Mobile:6479870088
+",US/Eastern (GMT  -05:00),@Home Online Session - 1 Hour(1) ,Self,60,0,2 @home seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,5:00 PM,28-Nov-22,10:24 AM,PARENT,EMAIL,CITY," Mobile:4166594140
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,C In-Centre seat 3,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,5:00 PM,30-Nov-22,7:38 PM,PARENT,EMAIL,CITY," Mobile:416 578 3602
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,F In-Centre seat 6,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,5:30 PM,20-Dec-22,12:05 PM,PARENT,EMAIL,CITY," Mobile: 4168873027
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,M In-Centre Seat 13,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,5:30 PM,03-Jan-23,1:00 PM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,D In-Centre seat 4,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,5:30 PM,28-Dec-22,9:06 PM,PARENT,EMAIL,CITY," Mobile:4166550797
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,A In-Centre seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,5:30 PM,14-Dec-22,7:25 PM,PARENT,EMAIL,CITY," Mobile: 902-394-3198
+",US/Eastern (GMT  -05:00),@Home Online Session - 1 Hour(1) ,Self,60,0,1 @home seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,5:30 PM,04-Jan-23,10:05 AM,PARENT,EMAIL,CITY," Mobile:4167238786
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,G In-centre seat 7,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,5:45 PM,17-Dec-22,7:40 PM,PARENT,EMAIL,CITY," Mobile:(416) 666-5913
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,E In-Centre seat 5,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,5:45 PM,04-Jan-23,3:14 PM,PARENT,EMAIL,CITY," Mobile:9059999894
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,H In-centre seat 8,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,5:45 PM,08-Dec-22,5:00 PM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,B In-Centre seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,5:45 PM,06-Dec-22,2:16 PM,PARENT,EMAIL,CITY," Mobile:9052520905
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,N In-Centre seat 14,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,5:45 PM,04-Jan-23,9:08 PM,PARENT,EMAIL,CITY," Mobile:9052520905
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,K In-centre seat 11,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,6:00 PM,08-Dec-22,8:14 AM,PARENT,EMAIL,CITY," Mobile:519 819-4868
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,I In-centre seat 9,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,6:00 PM,27-Nov-22,10:05 PM,PARENT,EMAIL,CITY," Mobile:09057169749
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,C In-Centre seat 3,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,6:00 PM,20-Dec-22,5:26 PM,PARENT,EMAIL,CITY," Mobile:4168585335
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,F In-Centre seat 6,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,6:00 PM,15-Sep-22,7:59 PM,PARENT,EMAIL,CITY,,,In-Centre Session - 1 Hour(1) ,Admin,60,0,L In-centre seat 12,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,6:00 PM,25-Nov-22,9:51 AM,PARENT,EMAIL,CITY," Mobile:4165777133
+",US/Eastern (GMT  -05:00),@Home Online Session - 1 Hour(1) ,Self,60,0,2 @home seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,6:30 PM,16-Nov-22,4:09 PM,PARENT,EMAIL,CITY," Mobile:(905) 960-2618
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,M In-Centre Seat 13,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,6:30 PM,16-Nov-22,4:11 PM,PARENT,EMAIL,CITY," Mobile:(905) 960-2618
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,A In-Centre seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,6:30 PM,15-Sep-22,7:49 PM,PARENT,EMAIL,CITY,,,In-Centre Session - 1 Hour(1) ,Admin,60,0,J In-centre seat 10,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,6:30 PM,17-Dec-22,11:39 PM,PARENT,EMAIL,CITY," Mobile:6476192337
+",US/Eastern (GMT  -05:00),@Home Online Session - 1 Hour(1) ,Self,60,0,1 @home seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,6:30 PM,16-Nov-22,4:14 PM,PARENT,EMAIL,CITY," Mobile:6475172622
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,D In-Centre seat 4,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,6:30 PM,15-Dec-22,9:48 AM,PARENT,EMAIL,CITY," Mobile:6477169603
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,G In-centre seat 7,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+12-Jan-23,7:00 PM,15-Sep-22,7:51 PM,PARENT,EMAIL,CITY,,,In-Centre Session - 1 Hour(1) ,Admin,60,0,L In-centre seat 12,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,3:30 PM,15-Nov-22,4:59 PM,PARENT,EMAIL,CITY," Mobile:647) 978-5118
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,M In-Centre Seat 13,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,3:30 PM,27-Dec-22,11:16 PM,PARENT,EMAIL,CITY," Mobile:6475190283
+",America/Toronto (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,D In-Centre seat 4,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,3:30 PM,26-Nov-22,10:25 PM,PARENT,EMAIL,CITY," Mobile:4165607211
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,A In-Centre seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,3:30 PM,04-Jan-23,3:26 PM,PARENT,EMAIL,CITY," Mobile:4163038895
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,G In-centre seat 7,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,3:45 PM,19-Dec-22,11:26 AM,PARENT,EMAIL,CITY," Mobile:4165223245
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,E In-Centre seat 5,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,3:45 PM,07-Dec-22,7:29 PM,PARENT,EMAIL,CITY," Mobile:6475756445
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,B In-Centre seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,3:45 PM,06-Dec-22,3:18 PM,PARENT,EMAIL,CITY," Mobile:4167228877
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,N In-Centre seat 14,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,4:00 PM,05-Dec-22,3:46 PM,PARENT,EMAIL,CITY," Mobile:6472629186
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,C In-Centre seat 3,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,4:00 PM,05-Dec-22,7:18 PM,PARENT,EMAIL,CITY," Mobile:4166666302
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,F In-Centre seat 6,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,4:00 PM,03-Jan-23,7:00 PM,PARENT,EMAIL,CITY," Mobile:(416) 854-5818
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,L In-centre seat 12,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,4:00 PM,18-Dec-22,3:43 PM,PARENT,EMAIL,CITY," Mobile:9052520905
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,I In-centre seat 9,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,4:00 PM,04-Jan-23,9:07 PM,PARENT,EMAIL,CITY," Mobile:9052520905
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,O In-Centre SEat 15,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,4:30 PM,15-Nov-22,5:13 PM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,M In-Centre Seat 13,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,4:30 PM,15-Dec-22,12:35 AM,PARENT,EMAIL,CITY," Mobile:6479492572
+",,In-Centre Session - 1 Hour(1) ,Self,60,0,D In-Centre seat 4,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,4:30 PM,23-Nov-22,2:41 PM,PARENT,EMAIL,CITY," Mobile:6479752728
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,A In-Centre seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,4:30 PM,21-Nov-22,9:59 AM,PARENT,EMAIL,CITY," Mobile:4168815224
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,G In-centre seat 7,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,4:30 PM,12-Sep-22,3:12 PM,PARENT,EMAIL,CITY," Mobile:6479785858
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,J In-centre seat 10,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,4:45 PM,01-Dec-22,3:05 PM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,E In-Centre seat 5,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,4:45 PM,01-Dec-22,3:05 PM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,H In-centre seat 8,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,4:45 PM,28-Nov-22,12:26 PM,PARENT,EMAIL,CITY," Mobile:4163993941
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,N In-Centre seat 14,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,4:45 PM,17-Nov-22,7:17 AM,PARENT,EMAIL,CITY," Mobile:416-272-9101
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,B In-Centre seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,5:00 PM,26-Sep-22,7:53 PM,PARENT,EMAIL,CITY," Mobile:(416) 817-2258
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,C In-Centre seat 3,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,5:00 PM,15-Dec-22,8:28 PM,PARENT,EMAIL,CITY," Mobile:6045376079
+",US/Eastern (GMT  -05:00),@Home Online Session - 1 Hour(1) ,Self,60,0,2 @home seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,5:00 PM,06-Nov-22,10:46 AM,PARENT,EMAIL,CITY," Mobile:4167970863
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,F In-Centre seat 6,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,5:30 PM,14-Nov-22,9:38 AM,PARENT,EMAIL,CITY," Mobile:4168852226
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,M In-Centre Seat 13,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,5:30 PM,19-Dec-22,11:23 PM,PARENT,EMAIL,CITY," Mobile:6476390251
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,D In-Centre seat 4,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,5:30 PM,15-Nov-22,4:45 PM,PARENT,EMAIL,CITY," Mobile:6478822622
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,A In-Centre seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,5:30 PM,23-Sep-22,12:19 PM,PARENT,EMAIL,CITY," Mobile:4165582486
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,J In-centre seat 10,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,5:45 PM,04-Jan-23,8:31 PM,PARENT,EMAIL,CITY," Mobile:6475044058
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,N In-Centre seat 14,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,5:45 PM,22-Nov-22,11:39 AM,PARENT,EMAIL,CITY," Mobile:4165052711
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,B In-Centre seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,5:45 PM,22-Nov-22,11:39 AM,PARENT,EMAIL,CITY," Mobile:4165052711
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,E In-Centre seat 5,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,6:00 PM,16-Nov-22,4:01 PM,PARENT,EMAIL,CITY," Mobile:4168358105
+",US/Eastern (GMT  -05:00),@Home Online Session - 1 Hour(1) ,Admin,60,0,2 @home seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,6:00 PM,19-Dec-22,3:25 PM,PARENT,EMAIL,CITY," Mobile:9057260011
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,F In-Centre seat 6,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,6:00 PM,16-Nov-22,3:45 PM,PARENT,EMAIL,CITY," Mobile:4168211933
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,C In-Centre seat 3,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,6:30 PM,15-Dec-22,9:45 AM,PARENT,EMAIL,CITY," Mobile:6477169603
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,M In-Centre Seat 13,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,6:30 PM,02-Nov-22,7:54 PM,PARENT,EMAIL,CITY," Mobile:(647) 444-5344
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,G In-centre seat 7,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+11-Jan-23,6:30 PM,02-Jan-23,12:38 PM,PARENT,EMAIL,CITY," Mobile:6472023181
+",US/Eastern (GMT  -05:00),@Home Online Session - 1 Hour(1) ,Self,60,0,1 @home seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,3:45 PM,01-Dec-22,7:18 PM,PARENT,EMAIL,CITY," Mobile:6472849150
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,B In-Centre seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,3:45 PM,19-Dec-22,11:21 AM,PARENT,EMAIL,CITY," Mobile:4165223245
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,N In-Centre seat 14,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,3:45 PM,16-Nov-22,3:38 PM,PARENT,EMAIL,CITY," Mobile:4168247783
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,H In-centre seat 8,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,4:00 PM,04-Jan-23,12:27 PM,PARENT,EMAIL,CITY," Mobile:2897166553
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,I In-centre seat 9,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,4:00 PM,16-Nov-22,4:21 PM,PARENT,EMAIL,CITY," Mobile:(416) 854-5818
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,F In-Centre seat 6,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,4:00 PM,04-Jan-23,7:38 PM,PARENT,EMAIL,CITY," Mobile:4162582204
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,L In-centre seat 12,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,4:00 PM,13-Nov-22,9:06 PM,PARENT,EMAIL,CITY," Mobile:416-578-0402
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,C In-Centre seat 3,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,4:30 PM,23-Nov-22,2:40 PM,PARENT,EMAIL,CITY," Mobile:6479752728
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,G In-centre seat 7,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,4:30 PM,16-Nov-22,4:35 PM,PARENT,EMAIL,CITY," Mobile:5077228598
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,A In-Centre seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,4:30 PM,16-Nov-22,4:36 PM,PARENT,EMAIL,CITY," Mobile:5077228598
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,D In-Centre seat 4,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,4:30 PM,16-Nov-22,4:37 PM,PARENT,EMAIL,CITY," Mobile:5077228598
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,M In-Centre Seat 13,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,4:45 PM,12-Nov-22,12:16 PM,PARENT,EMAIL,CITY," Mobile:(416) 471-6708
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,N In-Centre seat 14,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,4:45 PM,17-Dec-22,7:39 PM,PARENT,EMAIL,CITY," Mobile:(416) 666-5913
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,B In-Centre seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,4:45 PM,17-Nov-22,7:16 AM,PARENT,EMAIL,CITY," Mobile:416-272-9101
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,H In-centre seat 8,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,4:45 PM,23-Dec-22,9:19 AM,PARENT,EMAIL,CITY," Mobile:6472019648
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,E In-Centre seat 5,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,5:00 PM,28-Nov-22,10:51 AM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,F In-Centre seat 6,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,5:00 PM,28-Nov-22,10:51 AM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,I In-centre seat 9,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,5:00 PM,19-Nov-22,2:17 PM,PARENT,EMAIL,CITY," Mobile:6472688889
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,C In-Centre seat 3,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,5:30 PM,24-Sep-22,2:47 PM,PARENT,EMAIL,CITY," Mobile:9053922252
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,M In-Centre Seat 13,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,5:30 PM,20-Dec-22,12:04 PM,PARENT,EMAIL,CITY," Mobile: 4168873027
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,G In-centre seat 7,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,5:30 PM,12-Dec-22,9:51 AM,PARENT,EMAIL,CITY," Mobile:4163019230
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,D In-Centre seat 4,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,5:30 PM,16-Nov-22,4:13 PM,PARENT,EMAIL,CITY," Mobile:6475172622
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,A In-Centre seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,5:45 PM,20-Dec-22,5:25 PM,PARENT,EMAIL,CITY," Mobile:4168585335
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,E In-Centre seat 5,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,5:45 PM,08-Dec-22,4:59 PM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,N In-Centre seat 14,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,5:45 PM,03-Jan-23,12:59 PM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,H In-centre seat 8,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,6:00 PM,08-Dec-22,8:12 AM,PARENT,EMAIL,CITY," Mobile:519 819-4868
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,I In-centre seat 9,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,6:00 PM,04-Jan-23,2:48 PM,PARENT,EMAIL,CITY," Mobile:4167218800
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,L In-centre seat 12,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,6:30 PM,04-Jan-23,3:13 PM,PARENT,EMAIL,CITY," Mobile:9059999894
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,M In-Centre Seat 13,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,6:30 PM,16-Nov-22,4:15 PM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,G In-centre seat 7,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,6:30 PM,23-Nov-22,8:57 PM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,C In-Centre seat 3,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,6:30 PM,23-Nov-22,8:57 PM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,F In-Centre seat 6,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,6:30 PM,16-Nov-22,4:09 PM,PARENT,EMAIL,CITY," Mobile:(905) 960-2618
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,A In-Centre seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,6:30 PM,16-Nov-22,4:10 PM,PARENT,EMAIL,CITY," Mobile:(905) 960-2618
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,D In-Centre seat 4,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+10-Jan-23,6:30 PM,12-Dec-22,1:44 PM,PARENT,EMAIL,CITY,,,In-Centre Session - 1 Hour(1) ,Admin,60,0,B In-Centre seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,3:30 PM,19-Dec-22,3:17 PM,PARENT,EMAIL,CITY," Mobile:9057260011
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,G In-centre seat 7,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,3:30 PM,27-Dec-22,11:15 PM,PARENT,EMAIL,CITY," Mobile:6475190283
+",America/Toronto (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,D In-Centre seat 4,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,3:30 PM,26-Nov-22,10:24 PM,PARENT,EMAIL,CITY," Mobile:4165607211
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,M In-Centre Seat 13,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,3:30 PM,05-Dec-22,10:11 PM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,A In-Centre seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,3:45 PM,06-Dec-22,2:19 PM,PARENT,EMAIL,CITY," Mobile:9052520905
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,H In-centre seat 8,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,3:45 PM,18-Dec-22,3:42 PM,PARENT,EMAIL,CITY," Mobile:9052520905
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,K In-centre seat 11,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,3:45 PM,05-Dec-22,3:47 PM,PARENT,EMAIL,CITY," Mobile:6472629186
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,N In-Centre seat 14,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,3:45 PM,07-Dec-22,7:28 PM,PARENT,EMAIL,CITY," Mobile:6475756445
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,B In-Centre seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,3:45 PM,15-Nov-22,4:45 PM,PARENT,EMAIL,CITY," Mobile:6478822622
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,E In-Centre seat 5,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,4:00 PM,13-Nov-22,9:05 PM,PARENT,EMAIL,CITY," Mobile:416-578-0402
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,C In-Centre seat 3,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,4:00 PM,31-Dec-22,12:49 PM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,I In-centre seat 9,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,4:00 PM,15-Nov-22,5:10 PM,PARENT,EMAIL,CITY," Mobile:6477798866
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,F In-Centre seat 6,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,4:30 PM,16-Nov-22,3:43 PM,PARENT,EMAIL,CITY," Mobile:4168211933
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,G In-centre seat 7,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,4:30 PM,15-Nov-22,5:14 PM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,D In-Centre seat 4,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,4:30 PM,15-Nov-22,5:00 PM,PARENT,EMAIL,CITY," Mobile:647) 978-5118
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,J In-centre seat 10,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,4:30 PM,04-Jan-23,9:35 PM,PARENT,EMAIL,CITY," Mobile:(647) 393-3394
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,1 @home seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,4:30 PM,04-Jan-23,9:31 PM,PARENT,EMAIL,CITY," Mobile:6473933394
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,L In-centre seat 12,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,4:30 PM,12-Sep-22,3:11 PM,PARENT,EMAIL,CITY," Mobile:6479785858
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,M In-Centre Seat 13,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,4:30 PM,08-Dec-22,2:57 PM,PARENT,EMAIL,CITY," Mobile:6479492572
+",,In-Centre Session - 1 Hour(1) ,Self,60,0,A In-Centre seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,4:45 PM,15-Nov-22,5:16 PM,PARENT,EMAIL,CITY," Mobile:(647) 885-6637
+",,In-Centre Session - 1 Hour(1) ,Admin,60,0,B In-Centre seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,4:45 PM,15-Nov-22,5:17 PM,PARENT,EMAIL,CITY," Mobile:(647) 885-6637
+",,In-Centre Session - 1 Hour(1) ,Admin,60,0,E In-Centre seat 5,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,4:45 PM,21-Nov-22,9:58 AM,PARENT,EMAIL,CITY," Mobile:4168815224
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,H In-centre seat 8,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,4:45 PM,07-Dec-22,4:29 PM,PARENT,EMAIL,CITY," Mobile:6479752728
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,K In-centre seat 11,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,4:45 PM,28-Nov-22,12:25 PM,PARENT,EMAIL,CITY," Mobile:4163993941
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,N In-Centre seat 14,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,5:00 PM,15-Nov-22,5:25 PM,PARENT,EMAIL,CITY," Mobile:6473544030
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,C In-Centre seat 3,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,5:00 PM,15-Nov-22,5:25 PM,PARENT,EMAIL,CITY," Mobile:4164093432
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,F In-Centre seat 6,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,5:00 PM,15-Sep-22,7:42 PM,PARENT,EMAIL,CITY,,,In-Centre Session - 1 Hour(1) ,Admin,60,0,I In-centre seat 9,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,5:00 PM,26-Sep-22,7:54 PM,PARENT,EMAIL,CITY," Mobile:(416) 817-2258
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,O In-Centre SEat 15,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,5:30 PM,25-Nov-22,9:49 AM,PARENT,EMAIL,CITY," Mobile:4165777133
+",US/Eastern (GMT  -05:00),@Home Online Session - 1 Hour(1) ,Self,60,0,1 @home seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,5:30 PM,30-Nov-22,7:43 AM,PARENT,EMAIL,CITY," Mobile:4167970863
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,D In-Centre seat 4,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,5:30 PM,30-Nov-22,7:38 PM,PARENT,EMAIL,CITY," Mobile:416 578 3602
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,G In-centre seat 7,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,5:30 PM,04-Jan-23,9:10 PM,PARENT,EMAIL,CITY," Mobile:6475044058
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,J In-centre seat 10,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,5:30 PM,24-Sep-22,2:41 PM,PARENT,EMAIL,CITY," Mobile:9053922252
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,M In-Centre Seat 13,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,5:30 PM,14-Nov-22,9:37 AM,PARENT,EMAIL,CITY," Mobile:4168852226
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,A In-Centre seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,5:45 PM,19-Dec-22,11:20 PM,PARENT,EMAIL,CITY," Mobile:6476390251
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,N In-Centre seat 14,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,5:45 PM,28-Dec-22,9:02 PM,PARENT,EMAIL,CITY," Mobile:4166550797
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,B In-Centre seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,5:45 PM,07-Dec-22,12:59 AM,PARENT,EMAIL,CITY," Mobile:4165052711
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,E In-Centre seat 5,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,6:00 PM,17-Dec-22,11:38 PM,PARENT,EMAIL,CITY," Mobile:6476192337
+",US/Eastern (GMT  -05:00),@Home Online Session - 1 Hour(1) ,Self,60,0,2 @home seat 2,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,6:00 PM,03-Sep-22,12:04 AM,PARENT,EMAIL,CITY," Mobile:2892510440
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,K In-centre seat 11,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,6:00 PM,28-Nov-22,10:28 AM,PARENT,EMAIL,CITY," Mobile:4166594140
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,C In-Centre seat 3,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,6:00 PM,09-Dec-22,1:54 PM,PARENT,EMAIL,CITY," Mobile:4165679173
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,I In-centre seat 9,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,6:00 PM,23-Sep-22,12:54 PM,PARENT,EMAIL,CITY," Mobile:4165582486
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,F In-Centre seat 6,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,6:30 PM,27-Nov-22,10:05 PM,PARENT,EMAIL,CITY," Mobile:09057169749
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,M In-Centre Seat 13,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,6:30 PM,02-Nov-22,7:53 PM,PARENT,EMAIL,CITY," Mobile:(647) 444-5344
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,D In-Centre seat 4,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,6:30 PM,04-Jan-23,9:36 PM,PARENT,EMAIL,CITY," Mobile:6473933394
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,J In-centre seat 10,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,6:30 PM,04-Jan-23,9:35 PM,PARENT,EMAIL,CITY," Mobile:(647) 393-3394
+",US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Admin,60,0,H In-centre seat 8,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,6:30 PM,29-Nov-22,2:02 PM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,A In-Centre seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,6:30 PM,29-Nov-22,2:02 PM,PARENT,EMAIL,CITY,,US/Eastern (GMT  -05:00),In-Centre Session - 1 Hour(1) ,Self,60,0,G In-centre seat 7,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,6:30 PM,24-Nov-22,10:20 AM,PARENT,EMAIL,CITY," Mobile:6476880754
+",US/Eastern (GMT  -05:00),@Home Online Session - 1 Hour(1) ,Self,60,0,1 @home seat 1,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,6:30 PM,15-Sep-22,7:55 PM,PARENT,EMAIL,CITY,,,In-Centre Session - 1 Hour(1) ,Admin,60,0,L In-centre seat 12,00@0.com,,,STUDENT,"APPROVED
+",-,,,
+09-Jan-23,7:00 PM,15-Sep-22,7:43 PM,PARENT,EMAIL,CITY,,,In-Centre Session - 1 Hour(1) ,Admin,60,0,K In-centre seat 11,00@0.com,,,STUDENT,"APPROVED
+",-,,,
