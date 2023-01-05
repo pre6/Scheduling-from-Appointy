@@ -23,18 +23,20 @@ def copy_template():
     wb_temp.save("Appointments.xlsx")
 
 def delete_bad_columns():
-    wb = load_workbook(filename = 'appointmentsReport.xlsx')
+    f = "C:/Users/Centre Director/Desktop/appointmentsReport.xlsx"
+    wb = load_workbook(f)
     sheet = wb['appointmentsReport']
     sheet.delete_cols(3, 2)
     sheet.delete_cols(4, 4)
     sheet.delete_cols(5, 7)
     sheet.delete_cols(6, 5)
     sheet.delete_rows(1,1)
-    wb.save('appointmentsReport.xlsx')
+    wb.save(f)
 
 def fix_intake():
 
-    wb = load_workbook(filename = 'appointmentsReport.xlsx')
+    f = "C:/Users/Centre Director/Desktop/appointmentsReport.xlsx"
+    wb = load_workbook(f)
     ws = wb['appointmentsReport']
 
     maxr = ws.max_row
@@ -55,10 +57,11 @@ def fix_intake():
 
         ws['E'+str(r)].value = y
 
-    wb.save('appointmentsReport.xlsx')
+    wb.save(f)
 
 def format_date_time():
-    wb = load_workbook(filename = 'appointmentsReport.xlsx')
+    f = "C:/Users/Centre Director/Desktop/appointmentsReport.xlsx"
+    wb = load_workbook(f)
     ws = wb['appointmentsReport']
 
     ws.insert_cols(3)
@@ -75,7 +78,7 @@ def format_date_time():
         ws['C' + row].value = new
 
     ws.delete_cols(1, 2)
-    wb.save('appointmentsReport.xlsx')
+    wb.save(f)
 
 
 def remove_students():
@@ -90,7 +93,9 @@ def remove_students():
     for i in range(1,maxr+1):
         highschool_students.append(ws['A'+str(i)].value)
 
-    wb_appoint = load_workbook(filename = 'appointmentsReport.xlsx')
+    g = "C:/Users/Centre Director/Desktop/appointmentsReport.xlsx"
+
+    wb_appoint = load_workbook(g)
     ws_appoint = wb_appoint['appointmentsReport']
 
     maxrow = ws_appoint.max_row
@@ -109,10 +114,11 @@ def remove_students():
         i += 1
 
 
-    wb_appoint.save('appointmentsReport.xlsx')
+    wb_appoint.save(g)
 
 def no_student_name():
-    wb = load_workbook(filename = 'appointmentsReport.xlsx')
+    f = "C:/Users/Centre Director/Desktop/appointmentsReport.xlsx"
+    wb = load_workbook(f)
     ws = wb['appointmentsReport']
 
     maxr = ws.max_row
@@ -125,10 +131,11 @@ def no_student_name():
             parent = ws['B' + str(i)].value
             ws['D' + str(i)].value = parent
 
-    wb.save('appointmentsReport.xlsx')
+    wb.save(f)
 
 def home_online():
-    wb = load_workbook(filename = 'appointmentsReport.xlsx')
+    f = "C:/Users/Centre Director/Desktop/appointmentsReport.xlsx"
+    wb = load_workbook(f)
     ws_ic = wb.create_sheet("In_Center")
     ws_ol = wb.create_sheet("Online")
     ws = wb['appointmentsReport']
@@ -155,10 +162,11 @@ def home_online():
             ws_ol['E' + str(y)].value = ws['E' + str(r)].value
             y += 1
 
-    wb.save('appointmentsReport.xlsx')
+    wb.save(f)
 
 def create_list():
-    wb = load_workbook(filename = 'appointmentsReport.xlsx')
+    f = "C:/Users/Centre Director/Desktop/appointmentsReport.xlsx"
+    wb = load_workbook(f)
     ws_ic = wb['In_Center']
     ws_ol = wb['Online']
 
@@ -233,18 +241,26 @@ def split_list(lst):
 
         i += 1
 
+
+    for empty in day:
+        if empty == []:
+            day.remove(empty)
     return day
 
 
 def get_cells_ol(lst,day_num):
-    Alpha = 'CDEF'
-
-    if day_num == 0:
+    Alpha = ['C','D','E','F','W','X','Y','Z','AA','AB','AC','AD','AE','AF','AG']
+    weekday = list(lst[0].keys())[0].weekday()
+    print(weekday)
+    if  weekday == 5:
         initial_time = datetime.time(hour = 10)
     else:
         initial_time = datetime.time(hour = 15, minute = 30)
     initial_column = 'C'
-    initial_row = (28 * (4-day_num)+6)
+    if weekday == 5:
+        initial_row = 6+(weekday-1)*28
+    else:
+        initial_row = 6+(weekday)*28
 
     for i in range(22):
 
@@ -259,7 +275,10 @@ def get_cells_ol(lst,day_num):
                 num = Alpha.index(initial_column) + 1
                 initial_column = Alpha[num]
 
-        initial_row = ((28 * (4-day_num)+6) + i + 1)
+        if weekday == 5:
+            initial_row = ((28 * (weekday-1)+6) + i + 1)
+        else:
+            initial_row = ((28 * (weekday)+6) + i + 1)
         rand_day = datetime.date(2021, 1, 4)
         delta = datetime.timedelta(minutes = 15)
         new_date_with_time = datetime.datetime.combine(rand_day,initial_time)
@@ -271,13 +290,17 @@ def get_cells_ol(lst,day_num):
 def get_cell(lst,day_num):
 
     Alpha = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','AA','AB','AC','AD','AE','AF','AG','AH','AI']
-
-    if day_num == 0:
+    weekday = list(lst[0].keys())[0].weekday()
+    if  weekday == 5:
         initial_time = datetime.time(hour = 10)
     else:
         initial_time = datetime.time(hour = 15, minute = 30)
     initial_column = 'G'
-    initial_row = (28 * (4-day_num)+6)
+
+    if weekday == 5:
+        initial_row = 6+(weekday-1)*28
+    else:
+        initial_row = 6+(weekday)*28
 
     used_col = ['A','B','C','D','E','F']
     a = datetime.time(hour = 15, minute = 30)
@@ -314,8 +337,10 @@ def get_cell(lst,day_num):
                     num = Alpha.index(initial_column) + 1
                     initial_column = Alpha[num]
 
-
-        initial_row = ((28 * (4-day_num)+6) + i + 1)
+        if weekday == 5:
+            initial_row = ((28 * (weekday-1)+6) + i + 1)
+        else:
+            initial_row = ((28 * (weekday)+6) + i + 1)
         rand_day = datetime.date(2021, 1, 4)
         delta = datetime.timedelta(minutes = 15)
         new_date_with_time = datetime.datetime.combine(rand_day,initial_time)
@@ -365,34 +390,30 @@ def fill_cell(y):
     wb = load_workbook(filename = 'Appointments.xlsx')
     ws = wb['Week']
 
-    first = PatternFill(start_color='FCE5CD', fill_type='solid')
-    second = PatternFill(start_color='D9EAD3', fill_type='solid')
-    third = PatternFill(start_color='9FC5E8', fill_type='solid')
-    fourth = PatternFill(start_color='EAD1DC', fill_type='solid')
-    fifth = PatternFill(start_color='B4A7D6', fill_type='solid')
-    sixth = PatternFill(start_color='FFD966', fill_type='solid')
-    seventh = PatternFill(start_color='FFD966', fill_type='solid')
-    eighth = PatternFill(start_color='FFD966', fill_type='solid')
-    ninth = PatternFill(start_color='FFD966', fill_type='solid')
+    zeroth = PatternFill(start_color='FCE5CD', fill_type='solid')
+    first = PatternFill(start_color='D9EAD3', fill_type='solid')
+    second = PatternFill(start_color='9FC5E8', fill_type='solid')
+    third = PatternFill(start_color='EAD1DC', fill_type='solid')
+    fourth = PatternFill(start_color='FFD966', fill_type='solid')
 
-    colours = [first,second, third, fourth, fifth,sixth,seventh,eighth,ninth]
-
-    others = PatternFill(start_color='FFD966', fill_type='solid')
-
-    other_times = []
-    other_times.append(datetime.time(hour = 10))
-    other_times.append(datetime.time(hour = 10,minute = 15))
-    other_times.append(datetime.time(hour = 10,minute = 30))
-    other_times.append(datetime.time(hour = 15,minute = 30))
-    other_times.append(datetime.time(hour = 15, minute = 45))
-    other_times.append(datetime.time(hour = 16))
+    Alpha = ['G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','AA','AB','AC','AD','AE','AF','AG','AH','AI']
+    colour_col = []
+    number = 0
+    interm = []
+    for letter in Alpha:
+        if number%3 ==0 and number != 0:
+            colour_col.append(interm)
+            interm = []
+            interm.append(letter)
+        else:
+            interm.append(letter)
+        number+=1
 
     d = 0
 
     for day in y:
-        i=0
-        h= 0
-        thing = list(day[0].keys())[0].date()
+
+        thing = list(day[0].keys())[0].date() #to set the date
         the_col = 117-28*d
         ws['A' + str(the_col)].value = thing
 
@@ -400,24 +421,26 @@ def fill_cell(y):
             col = list(dict.values())[0][1]
             row = list(dict.values())[0][2]
 
-            if list(dict.keys())[0].time() not in other_times:
-                fill = others
-            elif h != list(dict.keys())[0].time():
-                i = 0
-                fill = colours[i]
+            if col in colour_col[0]:
+                fill = zeroth
+            elif col in colour_col[1]:
+                fill = first
+            elif col in colour_col[2]:
+                fill = second
+            elif col in colour_col[3]:
+                fill = third
             else:
-                fill = colours[i]
+                fill = fourth
 
             for item in dict:
                 student = dict[item][0]
                 ws[col + str(row)].value =  student
+
                 ws[col + str(row)].fill = fill
                 ws[col + str(row+1)].fill = fill
                 ws[col + str(row+2)].fill = fill
                 ws[col + str(row+3)].fill = fill
                 row = row + 4
-            i+=1
-            h = list(dict.keys())[0].time()
         d += 1
     wb.save('Appointments.xlsx')
 
@@ -441,26 +464,29 @@ home_online()
 
 list_ol_ic = create_list()
 
+
 list_ic_days = split_list(list_ol_ic[0])
+
 list_ol_days = split_list(list_ol_ic[1])
 
 finsihed_list_ol = []
 i = 0
 for item in list_ol_days:
-    f = get_cells_ol(item,i)
-    finsihed_list_ol.append(f)
-    i += 1
+    if item != []:
+        f = get_cells_ol(item,i)
+        finsihed_list_ol.append(f)
+        i += 1
+
 
 finished_list_ic = []
 j = 0
 for thing in list_ic_days:
-    f = get_cell(thing,j)
-    finished_list_ic.append(f)
-    j += 1
+    if thing != []:
+        f = get_cell(thing,j)
+        finished_list_ic.append(f)
+        j += 1
 
 fill_cell_ol(finsihed_list_ol)
 fill_cell(finished_list_ic)
-
-
 
 delete_files_last()
