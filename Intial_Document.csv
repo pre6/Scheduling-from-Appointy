@@ -1,4 +1,4 @@
-Appointment_Date,Appointment_Time,Booking_Date,Booking_Time,Customer_Name,Customer_Email,Customer_Address,Customer_Contact,Customer_Timezone,Service,Booked_By,Service_Duration_mins,
+Appointment_Date,Appointment_Time,Booking_Date,Booking_Time,Customer_Name,Customer_Email,Customer_Address,Customer_Contact,Customer_Timezone,Service,Booked_By,Service_Duration_mins,something,something,something
 14-Jan-23,10:00 AM,03-Jan-23,4:15 PM,PARENT,EXTRA INFO,EXTRA INFO,EXTRA INFO,EXTRA INFO,In-Centre Session - 1 Hour(1) ,EXTRA INFO,EXTRA,EXTRA,EXTRA,EXTRA,EXTRA,EXTRA,STUDENT,EXTRA,-,,,
 14-Jan-23,10:00 AM,26-Nov-22,10:25 PM,PARENT,EXTRA INFO,EXTRA INFO,EXTRA INFO,EXTRA INFO,In-Centre Session - 1 Hour(1) ,EXTRA INFO,EXTRA,EXTRA,EXTRA,EXTRA,EXTRA,EXTRA,STUDENT,EXTRA,-,,,
 14-Jan-23,10:00 AM,30-Nov-22,7:48 AM,PARENT,EXTRA INFO,EXTRA INFO,EXTRA INFO,EXTRA INFO,In-Centre Session - 1 Hour(1) ,EXTRA INFO,EXTRA,EXTRA,EXTRA,EXTRA,EXTRA,EXTRA,STUDENT,EXTRA,-,,,
