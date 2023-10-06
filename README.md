@@ -1,6 +1,7 @@
 # Scheduling-from-Appointy
 creating an excel spreadsheet like the one from Appointy
 
+I created an easy to use Graphical Interface that helped my client make a very specific schedule based on information from a website. My client wanted a schedule to have more features than what was procided by this website. 
 
-![image](https://github.com/pre6/Scheduling-from-Appointy/assets/47339289/27203c6c-63df-41ec-aa2b-94362cc74e7f)
+The AppointmentsReport file is the file from the website and the Final_Product is a sample of how the new schedule would look.
 
