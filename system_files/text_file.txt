@@ -1,4 +1,0 @@
-appointments folder: C:/Users/preet/Documents/Github/Scheduling-from-Appointy/appointments/
-student list folder: C:/Users/preet/Documents/Github/Scheduling-from-Appointy/appointments/extra/
-template_path_SCHOOL_YEAR: C:/Users/preet/Documents/Github/Scheduling-from-Appointy/system_files/Template_SCHOOL_YEAR.xlsx
-template_path_SUMMER: C:/Users/preet/Documents/Github/Scheduling-from-Appointy/system_files/Template_SUMMER.xlsx

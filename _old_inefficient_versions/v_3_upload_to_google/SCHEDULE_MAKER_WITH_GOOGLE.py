@@ -848,7 +848,7 @@ def upload_to_google_drive():
     monday_date = next_monday.strftime('%Y-%m-%d')
 
 
-    dictionary = read_config_file('C:/Users/preet/Documents/MATIC SOLUTIONS/MATHNASIUM/system_files/text_file.txt')
+    dictionary = read_config_file('path')
     service_account_key_file = dictionary['service_account_key_file']
     folder_id = dictionary['folder_id']
     template_id_drive = dictionary['template_id']
