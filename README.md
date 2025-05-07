@@ -48,7 +48,7 @@ The updated program does exactly what it’s supposed to: **it takes the output 
 Looking back at the journey of this project, I’ve learned a lot about:
 - **Improving code efficiency**: By leveraging powerful libraries like Pandas, I was able to reduce the amount of code and make it much more efficient.
 - **Adapting to change**: I changed as a person. A person who creates garabage to someone who can find the more logical step in a problem. I fundamentally approach coding differently now
-- **Automation’s Impact**: The impact of automating repetitive tasks cannot be understated. It made our work much easier and allowed us to focus on what really mattered—helping students. I think coding for effciency is an art. Like even figuring out which tasks can be automated is a skill that can be attained, and I feel like its never taught. Like the short version is, if anything, litterally anything on the computer at least is repetitive in some way, you can automated it period. My hatred for repretitive tasks fueled this understanding.
+- **Automation’s Impact**: The impact of automating repetitive tasks cannot be understated. It made our work much easier and allowed us to focus on what really mattered - helping students. I think coding for effciency is an art. Like even figuring out which tasks can be automated is a skill that can be attained, and I feel like its never taught. Like the short version is, if anything, litterally anything on the computer at least is repetitive in some way, you can automated it period. My hatred for repretitive tasks fueled this understanding.
 
 ## Conclusion
 
