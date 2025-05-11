@@ -12,7 +12,7 @@ At the time, I had no formal programming experience, but I had an inkling that I
 
 ## Overall Idea
 
-- ** Overall Idea **: Coverting Raw Data to a cool looking excel spreadsheet
+- **Overall Idea**: Coverting Raw Data to a cool looking excel spreadsheet
 
 ## Iterating and Adding GUI Features
 
