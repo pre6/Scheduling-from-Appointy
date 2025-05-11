@@ -10,10 +10,9 @@ I had to create a schedule at the end of each week which consisted of me manuall
 
 At the time, I had no formal programming experience, but I had an inkling that I could use Python.
 
+## Overall Idea
 
-### Key Features in the Beginning:
-- **Automated CSV to Excel Conversion**: Turned CSV data into a schedule format.
-- **Flexibility**: Allowed our team to handle the scheduling more efficiently, reducing errors.
+- ** Overall Idea **: Coverting Raw Data to a cool looking excel spreadsheet
 
 ## Iterating and Adding GUI Features
 
@@ -26,22 +25,33 @@ As time went on, I realized that the program needed to be updated. My boss asked
 
 After 2 years of working part-time at the tutoring center, I was asked to revise the tool before I left for good. By this point, I had gained more experience in programming and a much deeper understanding of Python, especially with libraries like Pandas. My earlier code, which had become inefficient and ugly, needed to be reworked.
 
-- **Reflection on the Old Code**: Looking back, the code was actually horrible, down to the logic choices I had made. Why on earth would I use dictionaries and transfrom strings in the csv files instead of using pandas and creating a dataframe? It accomodated excels infamous date format conversions, but it really didn't need to. I should have read the file and then wrote a new one, not doing some weird gymnastics on the file I had at hand. Also I had some really convoluted logic that created the columns, it really makes me wanna throw up. Anywaysssss.
+
+Looking back, the code was actually horrible, down to the logic choices I had made. Why on earth would I use dictionaries and transfrom strings in the csv files instead of using pandas and creating a dataframe? It accomodated excels infamous date format conversions, but it really didn't need to. I should have read the file and then wrote a new one, not doing some weird gymnastics on the file I had at hand. Also I had some really convoluted logic that created the columns, it really makes me wanna throw up. Anywaysssss.
+
   
-- **Used Pandas**: With gaining a brain cell, I realized I could simplify everything by doing all the transformations in Pandas, rather than relying on Excel or complicated logic. The code would be shorter, more efficient, and more flexible.
+With gaining a brain cell, I realized I could simplify everything by doing all the transformations in Pandas, rather than relying on Excel or complicated logic. The code would be shorter, more efficient, and more flexible.
 
 ## Rewriting the Code: From 700 Lines to 350
 
 With this new brain cell, I rewrote the program in just **350 lines of code** (down from 700+). I made the following improvements:
-- **Dynamic Transformations**: The transformations now work in a dynamic way, which means the program can adjust more easily to changing data formats. It in a sense is more rigid. It would place down a students name at a corresponding time, not calculating the cell which it should be in which sounds crazy but thats how I did it the first way. 
-- **No More Weird Logic**: I eliminated the old, confusing logic and replaced it with cleaner, more efficient Pandas code.
-- **Simplicity and Maintainability**: The new version of the program is far more maintainable and easier to update, ensuring that it can adapt to future changes.
+
+The transformations now work in a dynamic way, which means the program can adjust more easily to changing data formats. It in a sense is more rigid. It would place down a students name at a corresponding time, not calculating the cell which it should be in which sounds crazy but thats how I did it the first way. 
+
+I eliminated the old, confusing logic and replaced it with cleaner, more efficient Pandas code.
+
+
+The new version of the program is far more maintainable and easier to update, ensuring that it can adapt to future changes.
 
 ## The Final Version
 
-The updated program does exactly what it’s supposed to: **it takes the output from Appointy (a scheduling system), processes the CSV data, and creates an Excel sheet that resembles Appointy’s UI**. This feature was especially important during the COVID-19 pandemic when we needed to:
-- **Reorder cells**: So we could easily assign students to desks and teachers.
-- **Adapt quickly to changes**: As the format of the schedule was updated regularly due to changing circumstances.
+The updated program does exactly what it’s supposed to: **it takes the output from Appointy (a scheduling system), processes the CSV data, and creates an Excel sheet that resembles Appointy’s UI**. This feature was especially important during the COVID-19 pandemic,
+
+
+### Key Features:
+- **Automated CSV to Excel Conversion**: Turned CSV data into a schedule format.
+- **Flexibility**: Allowed our team to handle the scheduling more efficiently, reducing errors.
+- **Added a Graphical User Inserface**: Used Tinker for better user friendly experience
+- **Used a more Dynamical Logic**: Better for frequent changes
 
 ## Lessons Learned
 
