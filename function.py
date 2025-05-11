@@ -4,22 +4,24 @@ from openpyxl.styles import PatternFill
 from openpyxl import load_workbook
 from copy import copy
 from openpyxl.styles import Font
+from openpyxl.utils import get_column_letter
 
 
 
-def get_next_monday():
-    today = datetime.today()
-    days_ahead = 0 - today.weekday() + 7  # Monday is 0
-    if days_ahead <= 0:
-        days_ahead += 7
-    next_monday = today + timedelta(days=days_ahead)
-    return next_monday.strftime('%Y-%m-%d')  # or any format you prefer
+
 
 def remove_cols(df):
     
     # Drop unwanted columns
-    df.drop(columns=['Booking_Date', 'Booking_Time', 'Customer_Email', 'Customer_Address', 'Customer_Contact', 'Customer_Timezone', 'Booked_By', 'Service_Duration_mins', 'Amount', 'Staff_Name', 'Staff_Email', 'Resource', 'Customer_Remark', 'Appointment_Status', 'Arrival_Status', 'Admin_Note', 'Payment_Info', 'AddOn'], inplace=True)
+    # df.drop(columns=['Booking_Date', 'Booking_Time', 'Customer_Email', 'Customer_Address', 'Customer_Contact', 'Customer_Timezone', 'Booked_By', 'Service_Duration_mins', 'Amount', 'Staff_Name', 'Staff_Email', 'Resource', 'Customer_Remark', 'Appointment_Status', 'Arrival_Status', 'Admin_Note', 'Payment_Info', 'AddOn'], inplace=True)
     
+    
+    # List of columns you want to keep
+    keep_cols = ['Customer_Name', 'Appointment_Date', 'Appointment_Time', 'Intake_Form','Service']
+
+    # Create a new DataFrame with only those columns
+    df = df[keep_cols].copy()
+
     # fix strings 
     df['Intake_Form'] = df['Intake_Form'].str.replace(r'Intake form:\n|Student Name:|Student #2: ,\n|Student #2:|Student #3:|Student #2 Name \(if applicable\): ,|Student #3 Name \(if applicable\): |,\n|\n', '', regex=True).str.strip()
 
@@ -39,7 +41,7 @@ def remove_cols(df):
     return online_df,inperson_df
 
 
-def create_new_schedule(online_df,inperson_df):
+def create_new_schedule(online_df,inperson_df,earliest_date):
     # Create 5-minute time slots from 10:00 AM to 8:00 PM
     time_slots = pd.date_range("10:00", "20:00", freq="5min").time
     template_df = pd.DataFrame({'Time': time_slots})
@@ -47,7 +49,7 @@ def create_new_schedule(online_df,inperson_df):
     # memory of how many columns represent the students as they can change day to day.
     total_online_students_col_len =[]
     
-    name_of_work_book =get_next_monday()+".xlsx"
+    name_of_work_book =str(earliest_date)+".xlsx"
     
     # write the new excel sheet.
     with pd.ExcelWriter(name_of_work_book, engine='openpyxl') as writer:
@@ -56,15 +58,21 @@ def create_new_schedule(online_df,inperson_df):
             online_day_df = online_df[online_df['DayName'] == day]
             inperson_day_df = inperson_df[inperson_df['DayName'] == day]
             
+            # this is to have the date in the excel sheet for every day. This is just nice to have i think
+
+            if not inperson_day_df.empty:
+                this_is_the_date = str(inperson_day_df['Appointment_Date'].iloc[0]).split(" ")[0]
+            else:
+                this_is_the_date = "Note"
             
-            # Create an initial schedule with the Time column and two columns for notes
+
             schedule = pd.DataFrame({'Time': time_slots})
             
             
 
                     
             # Schedule starts with two note columns, then Time, and then 3 more note columns
-            schedule = pd.DataFrame({'Note 1': [''] * len(time_slots),
+            schedule = pd.DataFrame({this_is_the_date: [''] * len(time_slots),
                                     'Note 2': [''] * len(time_slots),
                                     'Time': time_slots})
             
@@ -79,6 +87,7 @@ def create_new_schedule(online_df,inperson_df):
             
             # for the online students
             online_col= []
+            
             
             for _, row in online_day_df.iterrows():
                 student_time = row['Appointment_Time']
@@ -149,7 +158,7 @@ def create_new_schedule(online_df,inperson_df):
                             break
 
                 if not placed:
-                    col = f'Col {len(table_columns) + 1}'
+                    col = f'IC {len(table_columns) + 1}'
                     table_columns.append(col)
                     schedule[col] = ''
                     schedule.at[start_idx, col] = student_name
@@ -169,22 +178,26 @@ def create_new_schedule(online_df,inperson_df):
 
             # Reorder columns just so we dont have all the students starting at the same time in adjacent cols. 
             # this is kind of just for asthetic and randomizing purposes.
-            reordered_cols = ['Note 1', 'Note 2', 'Time', 'HS 1', 'HS 2', 'HS 3']+online_col
+            reordered_cols = [this_is_the_date, 'Note 2', 'Time', 'HS 1', 'HS 2', 'HS 3']+online_col
             
             total_online_students_col_len.append(len(online_col))
             
             for group in range(4):
                 reordered_cols.extend([col for i, col in enumerate(table_columns) if i % 4 == group])
             schedule = schedule[reordered_cols]
+            
+
 
             schedule.to_excel(writer, sheet_name=day, index=False)
+            
+
     
     return total_online_students_col_len
 
-def colour_cells(total_online_students_col_len):
+def colour_cells(total_online_students_col_len,earliest_date):
     
     
-    name_of_work_book =get_next_monday()+".xlsx"
+    name_of_work_book =str(earliest_date)+".xlsx"
     wb = load_workbook(name_of_work_book)
     j=0
     
@@ -237,8 +250,8 @@ def colour_cells(total_online_students_col_len):
     wb.save(name_of_work_book)
 
 
-def remove_empty_sheets_and_rows():
-    name_of_work_book =get_next_monday()+".xlsx"
+def remove_empty_sheets_and_rows(earliest_date):
+    name_of_work_book =str(earliest_date)+".xlsx"
     wb = load_workbook(name_of_work_book)
     
     sheets_to_remove = []
@@ -279,9 +292,9 @@ def remove_empty_sheets_and_rows():
                     
 
 
-def remove_specific_rows():
+def remove_specific_rows(earliest_date):
     
-    name_of_work_book =get_next_monday()+".xlsx"
+    name_of_work_book =str(earliest_date)+".xlsx"
     wb = load_workbook(name_of_work_book)
     # Define minute sets
     morning_minutes = {'20', '25', '35', '40', '45', '50', '55'}
@@ -335,14 +348,17 @@ def remove_specific_rows():
     wb.save(name_of_work_book)
     
     
-def consolidate():
-    name_of_work_book =get_next_monday()+".xlsx"
+def consolidate(earliest_date):
+    
+    name_of_work_book =str(earliest_date)+".xlsx"
     wb = load_workbook(name_of_work_book)
         
     # Create a new sheet for the consolidated data
     if "All Days" in wb.sheetnames:
         del wb["All Days"]  # Delete if already exists
     summary_ws = wb.create_sheet("All Days")
+    
+    
 
     current_row = 1  # Track where to paste next
 
@@ -383,18 +399,53 @@ def consolidate():
 
     # Save cleaned workbook
     wb.save(name_of_work_book)
-    
 
+
+def copy_the_template(template_path,earliest_date):
+    # Load both workbooks
+    schedule_path = str(earliest_date) + ".xlsx"
+    wb1 = load_workbook(schedule_path)
+    wb2 = load_workbook(template_path)
+
+    # Select the first sheet from each workbook (you can change this)
+    ws1 = wb1.active
+    ws2 = wb2.active
+    
+    
+    for row in range(1, ws2.max_row + 1):
+        for col in [2]:  # Columns A and B
+            source_cell = ws2.cell(row=row, column=col)
+            target_cell = ws1.cell(row=row, column=col)
+
+            # Copy value
+            target_cell.value = source_cell.value
+
+            # Copy style
+            if source_cell.has_style:
+                target_cell.font = copy(source_cell.font)
+                target_cell.fill = copy(source_cell.fill)
+                target_cell.border = copy(source_cell.border)
+                target_cell.alignment = copy(source_cell.alignment)
+                target_cell.number_format = copy(source_cell.number_format)
+                target_cell.protection = copy(source_cell.protection)
+
+    # Save changes directly to workbook1.xlsx
+    wb1.save(schedule_path)
+
+        
+    
+    
+    
 # def process_files():
 
 #     # Load your student data
 #     df = pd.read_csv("appointmentsReport.csv")  # columns: Date, Time, Student Name
 #     online_df,inperson_df = remove_cols(df)
-#     total_online_students_col_len = create_new_schedule(online_df,inperson_df)
-#     colour_cells(total_online_students_col_len)
-#     remove_empty_sheets_and_rows()
-#     remove_specific_rows()
-#     consolidate()
+#     # total_online_students_col_len = create_new_schedule(online_df,inperson_df)
+#     # colour_cells(total_online_students_col_len)
+#     # remove_empty_sheets_and_rows()
+#     # remove_specific_rows()
+#     # consolidate()
 
 
 # process_files()

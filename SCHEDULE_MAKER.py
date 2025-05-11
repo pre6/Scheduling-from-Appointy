@@ -23,6 +23,8 @@ class ScheduleMakerApp:
 
         self.process_button = tk.Button(root, text="Process File", command=self.process_file)
         self.process_button.pack()
+        
+
 
     def browse_file(self):
         self.file_path = filedialog.askopenfilename(filetypes=[("All files", "*.*")])
@@ -38,16 +40,30 @@ class ScheduleMakerApp:
 
         try:
             df = pd.read_csv(self.file_path)
+            # this pulls the earlist date in the whole schdule, we use that to name the excel sheet, nothing else.
+            earliest_date = df['Appointment_Date'].min()
+            # df['Appointment_Date'] = pd.to_datetime(df['Appointment_Date'], format='%d %b %Y')
+            # df['Appointment_Date'] = df['Appointment_Date'].dt.strftime('%Y-%m-%d')
+
+            
             online_df,inperson_df = remove_cols(df)
-            total_online_students_col_len = create_new_schedule(online_df,inperson_df)
-            colour_cells(total_online_students_col_len)
-            remove_empty_sheets_and_rows()
-            remove_specific_rows()
-            consolidate()
+            total_online_students_col_len = create_new_schedule(online_df,inperson_df,earliest_date)
+            colour_cells(total_online_students_col_len,earliest_date)
+            remove_empty_sheets_and_rows(earliest_date)
+            remove_specific_rows(earliest_date)
+            consolidate(earliest_date)
+            copy_the_template("Template.xlsx",earliest_date)
             
             self.log(f"Processed file saved!")
         except Exception as e:
             self.log(f"Error: {e}")
+
+        
+        
+
+
+
+
 
     def log(self, message):
         self.log_text.insert(tk.END, message + "\n")
