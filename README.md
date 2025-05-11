@@ -53,6 +53,15 @@ The updated program does exactly what it’s supposed to: **it takes the output 
 - **Added a Graphical User Inserface**: Used Tinker for better user friendly experience
 - **Used a more Dynamical Logic**: Better for frequent changes
 
+
+
+### Hard Dependancies:
+- **Column names**: changing the column names would affect this script
+- **Timings**: This Script only functions from 10am to 8pm. Students/events scheudled outside of this time range will not be on the excel sheet
+- **Locaiton of files**: Name and location of the template file.
+
+
+
 ## Lessons Learned
 
 Looking back at the journey of this project, I’ve learned a lot about:
