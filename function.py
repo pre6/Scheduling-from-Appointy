@@ -29,14 +29,20 @@ def remove_cols(df):
 
     # Convert Date and Time columns to datetime
     # Convert date and time strings to datetime objects
-    df['Appointment_Date'] = pd.to_datetime(df['Appointment_Date'], format="%d %B %Y")
+    df['Appointment_Date'] = pd.to_datetime(df['Appointment_Date'], format="%d %b %Y")
     df['Appointment_Time'] = pd.to_datetime(df['Appointment_Time'], format="%I:%M %p").dt.time
 
     # Add a weekday name column (e.g., 'Monday')
     df['DayName'] = df['Appointment_Date'].dt.day_name()
+    
+    # this is to remove the seconds from the dataframe because we dont need that
+    df['Appointment_Time'] = df['Appointment_Time'].apply(lambda t: t.strftime('%H:%M'))
+
 
     online_df = df[df['Service'].str.contains('online', case=False, na=False)]
     inperson_df = df[~df['Service'].str.contains('online', case=False, na=False)]
+    
+    
     
     return online_df,inperson_df
 
@@ -44,7 +50,6 @@ def remove_cols(df):
 def create_new_schedule(online_df,inperson_df,earliest_date):
     # Create 5-minute time slots from 10:00 AM to 8:00 PM
     time_slots = pd.date_range("10:00", "20:00", freq="5min").time
-    template_df = pd.DataFrame({'Time': time_slots})
     
     # memory of how many columns represent the students as they can change day to day.
     total_online_students_col_len =[]
@@ -64,19 +69,17 @@ def create_new_schedule(online_df,inperson_df,earliest_date):
                 this_is_the_date = str(inperson_day_df['Appointment_Date'].iloc[0]).split(" ")[0]
             else:
                 this_is_the_date = "Note"
-            
-
-            schedule = pd.DataFrame({'Time': time_slots})
-            
-            
-
+       
                     
             # Schedule starts with two note columns, then Time, and then 3 more note columns
             schedule = pd.DataFrame({this_is_the_date: [''] * len(time_slots),
-                                    'Note 2': [''] * len(time_slots),
+                                    # 'Note 2': [''] * len(time_slots),
                                     'Time': time_slots})
             
+            # this is to remove the seconds from the time because we dont need it
+            schedule['Time'] = schedule['Time'].apply(lambda t: t.strftime('%H:%M'))
         
+   
             # Additional note columns
             schedule['HS 1'] = [''] * len(time_slots)
             schedule['HS 2'] = [''] * len(time_slots)
@@ -89,11 +92,14 @@ def create_new_schedule(online_df,inperson_df,earliest_date):
             online_col= []
             
             
+            
             for _, row in online_day_df.iterrows():
                 student_time = row['Appointment_Time']
                 student_name = row['Intake_Form']
                 try:
                     start_idx = schedule[schedule['Time'] == student_time].index[0]
+                    # print(schedule['Time'] )
+                    # print(student_time)
                 except IndexError:
                     continue
 
@@ -178,7 +184,7 @@ def create_new_schedule(online_df,inperson_df,earliest_date):
 
             # Reorder columns just so we dont have all the students starting at the same time in adjacent cols. 
             # this is kind of just for asthetic and randomizing purposes.
-            reordered_cols = [this_is_the_date, 'Note 2', 'Time', 'HS 1', 'HS 2', 'HS 3']+online_col
+            reordered_cols = [this_is_the_date, 'Time', 'HS 1', 'HS 2', 'HS 3']+online_col
             
             total_online_students_col_len.append(len(online_col))
             
@@ -211,9 +217,9 @@ def colour_cells(total_online_students_col_len,earliest_date):
         schedule_df = pd.read_excel(name_of_work_book, sheet_name=sheet_name)
         num_cols = schedule_df.shape[1]
         
-        for col_idx in range(6+total_online_students_col_len[j]+1, num_cols + 1):  # Start from the 7rd column (after Note 1 and Note 2)
+        for col_idx in range(6+total_online_students_col_len[j], num_cols + 1):  # Start from the 7rd column (after Note 1 and Note 2)
             table_col_letter = ws.cell(row=1, column=col_idx).column_letter
-            color_idx = ((col_idx - 7-total_online_students_col_len[j]) // 4) % len(hex_colors)
+            color_idx = ((col_idx - 6-total_online_students_col_len[j]) // 4) % len(hex_colors)
             fill = PatternFill(start_color=hex_colors[color_idx], end_color=hex_colors[color_idx], fill_type='solid')
 
             row_idx = 2
@@ -229,7 +235,7 @@ def colour_cells(total_online_students_col_len,earliest_date):
                     row_idx += 1
         
         
-        for col_idx in range(7, 6+total_online_students_col_len[j]+1): 
+        for col_idx in range(6, 6+total_online_students_col_len[j]): 
             table_col_letter = ws.cell(row=1, column=col_idx).column_letter
             color_idx = 'EA9999'
             fill = PatternFill(start_color=color_idx, end_color=color_idx, fill_type='solid')
@@ -267,7 +273,7 @@ def remove_empty_sheets_and_rows(earliest_date):
             empty = True
             uncolored = True
 
-            for col_idx in range(7, max_col + 1):  # Skip 'Time' column
+            for col_idx in range(6, max_col + 1):  # Skip 'Time' column
                 cell = ws.cell(row=row_idx, column=col_idx)
                 if cell.value not in (None, '', ' '):
                     empty = False
@@ -306,10 +312,9 @@ def remove_specific_rows(earliest_date):
         max_col = ws.max_column
 
         for row in range(max_row, 1, -1):  # skip header
-            time_cell = ws.cell(row=row, column=3)
+            time_cell = ws.cell(row=row, column=2)
             time_value = time_cell.value
-            
-    
+
 
             # Skip if there's no valid time
             parsed_time = None
@@ -317,7 +322,7 @@ def remove_specific_rows(earliest_date):
                 parsed_time = time_value.time()
             elif isinstance(time_value, str):
                 try:
-                    parsed_time = datetime.strptime(time_value.strip(), "%H:%M:%S").time()
+                    parsed_time = datetime.strptime(time_value.strip(), "%H:%M").time()
                 except ValueError:
                     continue
 
@@ -413,39 +418,47 @@ def copy_the_template(template_path,earliest_date):
     
     
     for row in range(1, ws2.max_row + 1):
-        for col in [2]:  # Columns A and B
+        for col in [1, 3, 4, 5]:  # Columns A, C, D, E
             source_cell = ws2.cell(row=row, column=col)
             target_cell = ws1.cell(row=row, column=col)
 
-            # Copy value
-            target_cell.value = source_cell.value
+            # Copy value only if source has value and target is empty
+            if source_cell.value is not None and (target_cell.value is None or target_cell.value == ""):
+                target_cell.value = source_cell.value
 
-            # Copy style
+            # Copy style/fill regardless (so colors are copied even if value is blank)
             if source_cell.has_style:
                 target_cell.font = copy(source_cell.font)
-                target_cell.fill = copy(source_cell.fill)
+                target_cell.fill = copy(source_cell.fill)  # copy color even if blank
                 target_cell.border = copy(source_cell.border)
                 target_cell.alignment = copy(source_cell.alignment)
                 target_cell.number_format = copy(source_cell.number_format)
                 target_cell.protection = copy(source_cell.protection)
 
-    # Save changes directly to workbook1.xlsx
     wb1.save(schedule_path)
 
         
     
     
-    
+
+   
 # def process_files():
 
 #     # Load your student data
 #     df = pd.read_csv("appointmentsReport.csv")  # columns: Date, Time, Student Name
+    
+
+#     # this pulls the earlist date in the whole schdule, we use that to name the excel sheet, nothing else.
+#     earliest_date = df['Appointment_Date'].min()
+    
 #     online_df,inperson_df = remove_cols(df)
-#     # total_online_students_col_len = create_new_schedule(online_df,inperson_df)
-#     # colour_cells(total_online_students_col_len)
-#     # remove_empty_sheets_and_rows()
-#     # remove_specific_rows()
-#     # consolidate()
+#     # print(inperson_df)
+#     total_online_students_col_len = create_new_schedule(online_df,inperson_df,earliest_date)
+#     colour_cells(total_online_students_col_len,earliest_date)
+#     remove_empty_sheets_and_rows(earliest_date)
+#     remove_specific_rows(earliest_date)
+#     consolidate(earliest_date)
+#     copy_the_template("Template.xlsx",earliest_date)
 
 
 # process_files()

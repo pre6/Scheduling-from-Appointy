@@ -42,6 +42,9 @@ class ScheduleMakerApp:
             df = pd.read_csv(self.file_path)
             # this pulls the earlist date in the whole schdule, we use that to name the excel sheet, nothing else.
             earliest_date = df['Appointment_Date'].min()
+            
+            # if you want to change the date format of the file
+            
             # df['Appointment_Date'] = pd.to_datetime(df['Appointment_Date'], format='%d %b %Y')
             # df['Appointment_Date'] = df['Appointment_Date'].dt.strftime('%Y-%m-%d')
 
