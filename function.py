@@ -73,7 +73,6 @@ def create_new_schedule(online_df,inperson_df,earliest_date):
                     
             # Schedule starts with two note columns, then Time, and then 3 more note columns
             schedule = pd.DataFrame({this_is_the_date: [''] * len(time_slots),
-                                    # 'Note 2': [''] * len(time_slots),
                                     'Time': time_slots})
             
             # this is to remove the seconds from the time because we dont need it
@@ -81,9 +80,9 @@ def create_new_schedule(online_df,inperson_df,earliest_date):
         
    
             # Additional note columns
-            schedule['HS 1'] = [''] * len(time_slots)
-            schedule['HS 2'] = [''] * len(time_slots)
-            schedule['HS 3'] = [''] * len(time_slots)
+            # schedule['HS 1'] = [''] * len(time_slots)
+            # schedule['HS 2'] = [''] * len(time_slots)
+            # schedule['HS 3'] = [''] * len(time_slots)
 
 
             bookings = []  # list of (col_name, start_idx, length, group)
@@ -184,7 +183,7 @@ def create_new_schedule(online_df,inperson_df,earliest_date):
 
             # Reorder columns just so we dont have all the students starting at the same time in adjacent cols. 
             # this is kind of just for asthetic and randomizing purposes.
-            reordered_cols = [this_is_the_date, 'Time', 'HS 1', 'HS 2', 'HS 3']+online_col
+            reordered_cols = [this_is_the_date, 'Time']+online_col
             
             total_online_students_col_len.append(len(online_col))
             
@@ -217,9 +216,9 @@ def colour_cells(total_online_students_col_len,earliest_date):
         schedule_df = pd.read_excel(name_of_work_book, sheet_name=sheet_name)
         num_cols = schedule_df.shape[1]
         
-        for col_idx in range(6+total_online_students_col_len[j], num_cols + 1):  # Start from the 7rd column (after Note 1 and Note 2)
+        for col_idx in range(2+total_online_students_col_len[j], num_cols + 1):  # Start from the 2rd column (after Note 1 and Note 2)
             table_col_letter = ws.cell(row=1, column=col_idx).column_letter
-            color_idx = ((col_idx - 6-total_online_students_col_len[j]) // 4) % len(hex_colors)
+            color_idx = ((col_idx - 2-total_online_students_col_len[j]) // 4) % len(hex_colors)
             fill = PatternFill(start_color=hex_colors[color_idx], end_color=hex_colors[color_idx], fill_type='solid')
 
             row_idx = 2
@@ -235,7 +234,7 @@ def colour_cells(total_online_students_col_len,earliest_date):
                     row_idx += 1
         
         
-        for col_idx in range(6, 6+total_online_students_col_len[j]): 
+        for col_idx in range(3, 3+total_online_students_col_len[j]): 
             table_col_letter = ws.cell(row=1, column=col_idx).column_letter
             color_idx = 'EA9999'
             fill = PatternFill(start_color=color_idx, end_color=color_idx, fill_type='solid')
@@ -418,7 +417,7 @@ def copy_the_template(template_path,earliest_date):
     
     
     for row in range(1, ws2.max_row + 1):
-        for col in [1, 3, 4, 5]:  # Columns A, C, D, E
+        for col in [1]:  # Columns A, C, D, E
             source_cell = ws2.cell(row=row, column=col)
             target_cell = ws1.cell(row=row, column=col)
 
@@ -437,28 +436,58 @@ def copy_the_template(template_path,earliest_date):
 
     wb1.save(schedule_path)
 
+def copy_highschool(template_path,earliest_date):
+    schedule_path = str(earliest_date) + ".xlsx"
+    wb1 = load_workbook(schedule_path)
+    wb2 = load_workbook(template_path)
+    # Get the first sheets
+    # Select the first sheet from each workbook (you can change this)
+    ws1 = wb1.active
+    ws2 = wb2.active
+    
+    new_sheet = wb1.create_sheet(title=ws2.title + "_copy")
+
+
+    # Copy cells from ws2 into new_sheet
+    for row in ws2.iter_rows():
+        for cell in row:
+            new_cell = new_sheet.cell(row=cell.row, column=cell.column, value=cell.value)
+            
+            # Optional: copy formatting
+            if cell.has_style:
+                new_cell.font = copy(cell.font)
+                new_cell.fill = copy(cell.fill)
+                new_cell.border = copy(cell.border)
+                new_cell.alignment = copy(cell.alignment)
+                new_cell.number_format = copy(cell.number_format)
+                new_cell.protection = copy(cell.protection)
+
+    # Save changes to wb1
+    wb1.save(schedule_path)
+
         
     
     
 
    
-# def process_files():
+def process_files():
 
-#     # Load your student data
-#     df = pd.read_csv("appointmentsReport.csv")  # columns: Date, Time, Student Name
+    # Load your student data
+    df = pd.read_csv("appointmentsReport.csv")  # columns: Date, Time, Student Name
     
 
-#     # this pulls the earlist date in the whole schdule, we use that to name the excel sheet, nothing else.
-#     earliest_date = df['Appointment_Date'].min()
+    # this pulls the earlist date in the whole schdule, we use that to name the excel sheet, nothing else.
+    earliest_date = df['Appointment_Date'].min()
     
-#     online_df,inperson_df = remove_cols(df)
-#     # print(inperson_df)
-#     total_online_students_col_len = create_new_schedule(online_df,inperson_df,earliest_date)
-#     colour_cells(total_online_students_col_len,earliest_date)
-#     remove_empty_sheets_and_rows(earliest_date)
-#     remove_specific_rows(earliest_date)
-#     consolidate(earliest_date)
-#     copy_the_template("Template.xlsx",earliest_date)
+    online_df,inperson_df = remove_cols(df)
+    # print(inperson_df)
+    total_online_students_col_len = create_new_schedule(online_df,inperson_df,earliest_date)
+    colour_cells(total_online_students_col_len,earliest_date)
+    remove_empty_sheets_and_rows(earliest_date)
+    remove_specific_rows(earliest_date)
+    consolidate(earliest_date)
+    copy_the_template("Template.xlsx",earliest_date)
+    copy_highschool("Template_Highschool.xlsx",earliest_date)
 
 
-# process_files()
+process_files()
