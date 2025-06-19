@@ -56,6 +56,7 @@ class ScheduleMakerApp:
             remove_specific_rows(earliest_date)
             consolidate(earliest_date)
             copy_the_template("Template.xlsx",earliest_date)
+            copy_highschool("Template_Highschool.xlsx",earliest_date)
             
             self.log(f"Processed file saved!")
         except Exception as e:

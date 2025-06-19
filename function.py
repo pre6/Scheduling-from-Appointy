@@ -470,24 +470,24 @@ def copy_highschool(template_path,earliest_date):
     
 
    
-def process_files():
+# def process_files():
 
-    # Load your student data
-    df = pd.read_csv("appointmentsReport.csv")  # columns: Date, Time, Student Name
+#     # Load your student data
+#     df = pd.read_csv("appointmentsReport.csv")  # columns: Date, Time, Student Name
     
 
-    # this pulls the earlist date in the whole schdule, we use that to name the excel sheet, nothing else.
-    earliest_date = df['Appointment_Date'].min()
+#     # this pulls the earlist date in the whole schdule, we use that to name the excel sheet, nothing else.
+#     earliest_date = df['Appointment_Date'].min()
     
-    online_df,inperson_df = remove_cols(df)
-    # print(inperson_df)
-    total_online_students_col_len = create_new_schedule(online_df,inperson_df,earliest_date)
-    colour_cells(total_online_students_col_len,earliest_date)
-    remove_empty_sheets_and_rows(earliest_date)
-    remove_specific_rows(earliest_date)
-    consolidate(earliest_date)
-    copy_the_template("Template.xlsx",earliest_date)
-    copy_highschool("Template_Highschool.xlsx",earliest_date)
+#     online_df,inperson_df = remove_cols(df)
+#     # print(inperson_df)
+#     total_online_students_col_len = create_new_schedule(online_df,inperson_df,earliest_date)
+#     colour_cells(total_online_students_col_len,earliest_date)
+#     remove_empty_sheets_and_rows(earliest_date)
+#     remove_specific_rows(earliest_date)
+#     consolidate(earliest_date)
+#     copy_the_template("Template.xlsx",earliest_date)
+#     copy_highschool("Template_Highschool.xlsx",earliest_date)
 
 
-process_files()
+# process_files()
