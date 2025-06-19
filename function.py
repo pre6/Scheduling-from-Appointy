@@ -216,7 +216,7 @@ def colour_cells(total_online_students_col_len,earliest_date):
         schedule_df = pd.read_excel(name_of_work_book, sheet_name=sheet_name)
         num_cols = schedule_df.shape[1]
         
-        for col_idx in range(2+total_online_students_col_len[j], num_cols + 1):  # Start from the 2rd column (after Note 1 and Note 2)
+        for col_idx in range(3+total_online_students_col_len[j], num_cols + 1):  # Start from the 2rd column (after Note 1 and Note 2)
             table_col_letter = ws.cell(row=1, column=col_idx).column_letter
             color_idx = ((col_idx - 2-total_online_students_col_len[j]) // 4) % len(hex_colors)
             fill = PatternFill(start_color=hex_colors[color_idx], end_color=hex_colors[color_idx], fill_type='solid')
@@ -272,7 +272,7 @@ def remove_empty_sheets_and_rows(earliest_date):
             empty = True
             uncolored = True
 
-            for col_idx in range(6, max_col + 1):  # Skip 'Time' column
+            for col_idx in range(3, max_col + 1):  # Skip 'Time' column
                 cell = ws.cell(row=row_idx, column=col_idx)
                 if cell.value not in (None, '', ' '):
                     empty = False
@@ -473,7 +473,7 @@ def copy_highschool(template_path,earliest_date):
 # def process_files():
 
 #     # Load your student data
-#     df = pd.read_csv("appointmentsReport.csv")  # columns: Date, Time, Student Name
+#     df = pd.read_csv("appointmentsReport (10).csv")  # columns: Date, Time, Student Name
     
 
 #     # this pulls the earlist date in the whole schdule, we use that to name the excel sheet, nothing else.
