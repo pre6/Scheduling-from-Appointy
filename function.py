@@ -6,7 +6,7 @@ from copy import copy
 from openpyxl.styles import Font
 from openpyxl.utils import get_column_letter
 
-
+import os
 
 
 
@@ -48,13 +48,17 @@ def remove_cols(df):
 
 
 def create_new_schedule(online_df,inperson_df,earliest_date):
+    # Ensure 'Schedule' folder exists
+
+
     # Create 5-minute time slots from 10:00 AM to 8:00 PM
     time_slots = pd.date_range("10:00", "20:00", freq="5min").time
     
     # memory of how many columns represent the students as they can change day to day.
     total_online_students_col_len =[]
     
-    name_of_work_book =str(earliest_date)+".xlsx"
+    # name_of_work_book =str(earliest_date)+".xlsx"
+    name_of_work_book = os.path.join("Schedule", str(earliest_date) + ".xlsx")
     
     # write the new excel sheet.
     with pd.ExcelWriter(name_of_work_book, engine='openpyxl') as writer:
@@ -78,11 +82,7 @@ def create_new_schedule(online_df,inperson_df,earliest_date):
             # this is to remove the seconds from the time because we dont need it
             schedule['Time'] = schedule['Time'].apply(lambda t: t.strftime('%H:%M'))
         
-   
-            # Additional note columns
-            # schedule['HS 1'] = [''] * len(time_slots)
-            # schedule['HS 2'] = [''] * len(time_slots)
-            # schedule['HS 3'] = [''] * len(time_slots)
+ 
 
 
             bookings = []  # list of (col_name, start_idx, length, group)
@@ -202,7 +202,7 @@ def create_new_schedule(online_df,inperson_df,earliest_date):
 def colour_cells(total_online_students_col_len,earliest_date):
     
     
-    name_of_work_book =str(earliest_date)+".xlsx"
+    name_of_work_book = os.path.join("Schedule", str(earliest_date) + ".xlsx")
     wb = load_workbook(name_of_work_book)
     j=0
     
@@ -256,7 +256,7 @@ def colour_cells(total_online_students_col_len,earliest_date):
 
 
 def remove_empty_sheets_and_rows(earliest_date):
-    name_of_work_book =str(earliest_date)+".xlsx"
+    name_of_work_book = os.path.join("Schedule", str(earliest_date) + ".xlsx")
     wb = load_workbook(name_of_work_book)
     
     sheets_to_remove = []
@@ -299,7 +299,7 @@ def remove_empty_sheets_and_rows(earliest_date):
 
 def remove_specific_rows(earliest_date):
     
-    name_of_work_book =str(earliest_date)+".xlsx"
+    name_of_work_book = os.path.join("Schedule", str(earliest_date) + ".xlsx")
     wb = load_workbook(name_of_work_book)
     # Define minute sets
     morning_minutes = {'20', '25', '35', '40', '45', '50', '55'}
@@ -354,13 +354,15 @@ def remove_specific_rows(earliest_date):
     
 def consolidate(earliest_date):
     
-    name_of_work_book =str(earliest_date)+".xlsx"
+    name_of_work_book = os.path.join("Schedule", str(earliest_date) + ".xlsx")
     wb = load_workbook(name_of_work_book)
+    
+    sheet_name = str(earliest_date)
         
     # Create a new sheet for the consolidated data
-    if "All Days" in wb.sheetnames:
-        del wb["All Days"]  # Delete if already exists
-    summary_ws = wb.create_sheet("All Days")
+    if sheet_name in wb.sheetnames:
+        del wb[sheet_name]  # Delete if already exists
+    summary_ws = wb.create_sheet(sheet_name)
     
     
 
@@ -397,9 +399,9 @@ def consolidate(earliest_date):
 
         current_row += 3  # Add a blank row between days
         
-    for sheet_name in wb.sheetnames:
-        if sheet_name != "All Days":
-            del wb[sheet_name]
+    for thing in wb.sheetnames:
+        if thing != sheet_name:
+            del wb[thing]
 
     # Save cleaned workbook
     wb.save(name_of_work_book)
@@ -407,7 +409,7 @@ def consolidate(earliest_date):
 
 def copy_the_template(template_path,earliest_date):
     # Load both workbooks
-    schedule_path = str(earliest_date) + ".xlsx"
+    schedule_path = name_of_work_book = os.path.join("Schedule", str(earliest_date) + ".xlsx")
     wb1 = load_workbook(schedule_path)
     wb2 = load_workbook(template_path)
 
@@ -437,7 +439,7 @@ def copy_the_template(template_path,earliest_date):
     wb1.save(schedule_path)
 
 def copy_highschool(template_path,earliest_date):
-    schedule_path = str(earliest_date) + ".xlsx"
+    schedule_path = name_of_work_book = os.path.join("Schedule", str(earliest_date) + ".xlsx")
     wb1 = load_workbook(schedule_path)
     wb2 = load_workbook(template_path)
     # Get the first sheets
@@ -445,7 +447,7 @@ def copy_highschool(template_path,earliest_date):
     ws1 = wb1.active
     ws2 = wb2.active
     
-    new_sheet = wb1.create_sheet(title=ws2.title + "_copy")
+    new_sheet = wb1.create_sheet(title=str(earliest_date) + "_highschool")
 
 
     # Copy cells from ws2 into new_sheet
@@ -472,15 +474,15 @@ def copy_highschool(template_path,earliest_date):
    
 # def process_files():
 
-#     # Load your student data
-#     df = pd.read_csv("appointmentsReport (10).csv")  # columns: Date, Time, Student Name
+    # Load your student data
+    # df = pd.read_csv("appointmentsReport (10).csv")  # columns: Date, Time, Student Name
     
 
-#     # this pulls the earlist date in the whole schdule, we use that to name the excel sheet, nothing else.
-#     earliest_date = df['Appointment_Date'].min()
+    # this pulls the earlist date in the whole schdule, we use that to name the excel sheet, nothing else.
+    # earliest_date = df['  Appointment_Date'].min()
     
-#     online_df,inperson_df = remove_cols(df)
-#     # print(inperson_df)
+    # online_df,inperson_df = remove_cols(df)
+    # print(inperson_df)
 #     total_online_students_col_len = create_new_schedule(online_df,inperson_df,earliest_date)
 #     colour_cells(total_online_students_col_len,earliest_date)
 #     remove_empty_sheets_and_rows(earliest_date)
